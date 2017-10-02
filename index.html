@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Color Swatches</title>
+  <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+    h1 {
+      font-family: 'Butterfly Kids', cursive;
+      padding-bottom: 1em;
+      font-size: 5em;
+    }
+
+    .box-one,
+    .box-two,
+    .box-three {
+      width: 100px;
+      height: 100px;
+      margin: 20px auto;
+      border-radius: 50%;
+      /*now they're no longer boxes*/
+      background: rgb(100, 100, 100);
+      /* the values accepted here are between 0 and 256 */
+      transition: 0.7s;
+    }
+
+    .box-one:hover,
+    .box-two:hover,
+    .box-three:hover {
+      border-radius: 0%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="text-center">
+    <h1>Swatching Colors</h1>
+  </header>
+  <div class="row">
+    <div class="col-lg-2 col-lg-offset-3">
+      <!-- first color-->
+      <div class="text-center">
+        <button type="button" class="btn btn-primary" id="first-box">Change!</button>
+      </div>
+      <div class="box-one"></div>
+      <div class="firstColor text-center"></div>
+      <br>
+    </div>
+    <div class="col-lg-2">
+      <!--second color -->
+      <div class="text-center">
+        <button type="button" class="btn btn-primary" id="second-box">Change!</button>
+      </div>
+      <div class="box-two"></div>
+      <div class="secondColor text-center"></div>
+      <br>
+    </div>
+    <!--third color -->
+    <div class="col-lg-2">
+      <div class="text-center">
+        <button type="button" class="btn btn-primary" id="third-box">Change!</button>
+      </div>
+      <div class="box-three"></div>
+      <div class="thirdColor text-center"></div>
+      <br>
+    </div>
+  </div>
+  <!-- end row-->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
